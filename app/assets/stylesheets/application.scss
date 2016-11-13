@@ -17,6 +17,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Archivo+Black|Bevan|Russo+One');
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 // colors!!!!
 // #FCDF00
@@ -36,6 +38,29 @@ body {
   text-align: center;
   font-size: 500%;
   text-shadow: 1px 2px 3px #666;
+}
+
+.heading {
+  font-size: 125%;
+}
+
+.title {
+  font-style: italic;
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+}
+
+.footer {
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.footer-icon {
+  font-size: 150%;
+  text-align: center;
 }
 
 .navbar-brand { position: relative; z-index: 2; }
