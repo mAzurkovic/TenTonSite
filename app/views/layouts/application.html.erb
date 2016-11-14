@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>TenTon1010</title>
+  <title>Ten Ton Robotics</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,8 +10,23 @@
 
 <h1 class="jumbo-title"><strong>Ten Ton Robotics</strong></h1>
 
+<ul class="navigation">
+  <li><a href="/">Home</a></li>
+  <li class="drop">
+    <a href="#" class="dropbtn">About</a>
+    <div class="drop-content">
+      <a href="#">Info</a>
+      <a href="/about/events">Events</a>
+      <a href="/about/achievements">Achievements</a>
+      <a href="#">Outreach</a>
+    </div>
+  </li>
+  <li><a href="#">VEX</a></li>
+  <li><a href="#">FIRST</a></li>
+  <li><a href="#">Resources</a></li>
+</ul>
+<!--
 <nav class="navbar navbar-default" role="navigation" style="width: 70%; margin: 0 auto;">
-  <!-- Brand and toggle get grouped for better mobile display -->
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
       <span class="sr-only">Toggle navigation</span>
@@ -21,7 +36,6 @@
     </button>
   </div>
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li><a href="/">Home</a></li>
@@ -35,25 +49,13 @@
           <li><a href="#">Join</a></li>
         </ul>
       </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">VEX <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Teams</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">FIRST <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Teams</a></li>
-        </ul>
-      </li>
+      <li><a href="/">VEX</a></li>
+      <li><a href="/" style="font-style: italic;">FIRST</a></li>
       <li><a href="#">Resources</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+  </div>
+</nav> -->
 
 <%= yield %>
 
@@ -68,11 +70,9 @@
     </div>
     <div class="col-md-2" style="float: left;">
       <h3 class="title">About</h3>
-      <ul>
-        <li><a href="#">Info</a></li>
-        <li><a href="#">Outreach</a></li>
-        <li><a href="#">Join</a></li>
-      </ul>
+      <div class="footer-about"><a href="#">Info</a></div>
+      <div class="footer-about"><a href="#">Outeach</a></div>
+      <div class="footer-about"><a href="#">Join</a></div>
     </div>
     <div class="col-md-3">
       <h3 class="title">Follow Us!</h3>
@@ -86,7 +86,7 @@
       </div>
     </div>
   </div>
-
+  <br>
   <div style="text-align: center;">
     Copyright (c) 2016 Ten Ton Robotics All Rights Reserved.
   </div>
@@ -94,7 +94,4 @@
 </div>
 
 </body>
-<script type="text/javascript">
-  $('.dropdown-toggle').dropdown()
-</script>
 </html>

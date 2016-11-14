@@ -54,4 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   root 'pages#index'
+  get '/about/achievements' => 'pages#achievements'
+  get '/about/events' => 'pages#events'
+
 end

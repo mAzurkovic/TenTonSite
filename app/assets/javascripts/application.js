@@ -11,12 +11,12 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
 //= require bootstrap
-//= require jquery
+//= require turbolinks
 
 
 $(document).ready(function() {
@@ -36,3 +36,18 @@ $(document).ready(function() {
     $(".transition-timer-carousel-progress-bar", "#transition-timer-carousel")
         .css("width", "100%");
 });
+
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+
+
+$('.dropdown-toggle').dropdown();
